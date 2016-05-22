@@ -1,8 +1,10 @@
 # ReactAnimatedEllipsis #
 
+A React component to animate ellipsis.
+
 ![screenshot](https://raw.githubusercontent.com/szchenghuang/animated-ellipsis/master/screenshots/animated-ellipsis.gif)
 
-ReactAnimatedEllipsis is a React component used to indicate that an action is being executed, nicely combined with a tip sentence. It is a wrapper of [animated-ellipsis](https://github.com/szchenghuang/animated-ellipsis).
+This is a React wrapper of [animated-ellipsis](https://github.com/szchenghuang/animated-ellipsis).
 
 ## Install ##
 
