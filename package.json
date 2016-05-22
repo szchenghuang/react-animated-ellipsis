@@ -1,7 +1,7 @@
 {
   "name": "react-animated-ellipsis",
   "author": "szchenghuang <szchenghuang@gmail.com>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "ReactAnimatedEllipsis is a React component used to indicate that an action is being executed, nicely combined with a tip sentence. It is a wrapper of [animated-ellipsis](https://github.com/szchenghuang/animated-ellipsis).",
   "main": "index.js",
   "keywords": [
