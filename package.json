@@ -1,0 +1,43 @@
+{
+  "name": "react-animated-ellipsis",
+  "author": "szchenghuang <szchenghuang@gmail.com>",
+  "version": "0.0.0",
+  "description": "ReactAnimatedEllipsis is a React component used to indicate that an action is being executed, nicely combined with a tip sentence. It is a wrapper of [animated-ellipsis](https://github.com/szchenghuang/animated-ellipsis).",
+  "main": "index.js",
+  "keywords": [
+    "animation",
+    "ellipsis",
+    "loading",
+    "react",
+    "spinning"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/szchenghuang/react-animated-ellipsis/issues"
+  },
+  "homepage": "https://github.com/szchenghuang/react-animated-ellipsis#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szchenghuang/react-animated-ellipsis.git"
+  },
+  "scripts": {
+    "deploy": "rm -rf dist && mkdir dist && babel ./src --out-dir ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "animated-ellipsis": "0.0.3"
+  },
+  "devDependencies": {
+    "animated-ellipsis": "^0.0.3",
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "react": "^0.14.3"
+  },
+  "peerDevDependencies": {
+    "animated-ellipsis": "^0.0.3",
+    "react": "^0.14.3"
+  }
+}
