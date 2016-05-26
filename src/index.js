@@ -46,7 +46,7 @@ const ReactAnimatedEllipsis = React.createClass({
         );
     },
     animateEllipsis( rootElem ) {
-        rootElem.animateEllipsis();
+        rootElem && rootElem.animateEllipsis();
     }
 });
 
