@@ -54,7 +54,7 @@ var ReactAnimatedEllipsis = _react2.default.createClass({
             'data-spacing': spacing });
     },
     animateEllipsis: function animateEllipsis(rootElem) {
-        rootElem.animateEllipsis();
+        rootElem && rootElem.animateEllipsis();
     }
 });
 
