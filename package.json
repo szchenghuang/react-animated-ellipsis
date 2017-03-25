@@ -37,7 +37,7 @@
     "react": "^0.14.3"
   },
   "peerDevDependencies": {
-    "animated-ellipsis": "^0.0.3",
+    "animated-ellipsis": "^0.0.4",
     "react": "^0.14.3"
   }
 }
