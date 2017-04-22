@@ -56,7 +56,7 @@ var ReactAnimatedEllipsis = function (_React$Component) {
 
       return _react2.default.createElement('span', {
         ref: function ref(_ref) {
-          return _ref.animateEllipsis();
+          return _ref && _ref.animateEllipsis();
         },
         className: className,
         style: style,

@@ -19,7 +19,7 @@ class ReactAnimatedEllipsis extends React.Component {
 
     return (
       <span
-        ref={ ref => ref.animateEllipsis() }
+        ref={ ref => ref && ref.animateEllipsis() }
         className={ className }
         style={ style }
         data-margin-left={ marginLeft }
