@@ -1,15 +1,9 @@
 'use strict';
 
-//#############################################################################
-// Library includes.
-//#############################################################################
 import 'animated-ellipsis';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-//#############################################################################
-// React components.
-//#############################################################################
 class ReactAnimatedEllipsis extends React.Component {
   render() {
     const { style, className, marginLeft, spacing, fontSize } = this.props;
@@ -44,7 +38,4 @@ ReactAnimatedEllipsis.defaultProps = {
   spacing: '0.1rem'
 };
 
-//#############################################################################
-// Exports.
-//#############################################################################
 export default ReactAnimatedEllipsis;
