@@ -1,9 +1,5 @@
 'use strict';
 
-//#############################################################################
-// Library includes.
-//#############################################################################
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -28,9 +24,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//#############################################################################
-// React components.
-//#############################################################################
 var ReactAnimatedEllipsis = function (_React$Component) {
   _inherits(ReactAnimatedEllipsis, _React$Component);
 
@@ -41,8 +34,20 @@ var ReactAnimatedEllipsis = function (_React$Component) {
   }
 
   _createClass(ReactAnimatedEllipsis, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.wrapper.animateEllipsis();
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      this.wrapper.stopAnimatingEllipsis();
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var _props = this.props,
           style = _props.style,
           className = _props.className,
@@ -56,7 +61,7 @@ var ReactAnimatedEllipsis = function (_React$Component) {
 
       return _react2.default.createElement('span', {
         ref: function ref(_ref) {
-          return _ref && _ref.animateEllipsis();
+          return _this2.wrapper = _ref;
         },
         className: className,
         style: style,
@@ -84,7 +89,4 @@ ReactAnimatedEllipsis.defaultProps = {
   spacing: '0.1rem'
 };
 
-//#############################################################################
-// Exports.
-//#############################################################################
 exports.default = ReactAnimatedEllipsis;

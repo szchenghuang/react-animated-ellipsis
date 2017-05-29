@@ -5,6 +5,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class ReactAnimatedEllipsis extends React.Component {
+  componentDidMount() {
+    this.wrapper.animateEllipsis();
+  }
+  componentWillUnmount() {
+    this.wrapper.stopAnimatingEllipsis();
+  }
   render() {
     const { style, className, marginLeft, spacing, fontSize } = this.props;
     if ( fontSize ) {
@@ -13,7 +19,7 @@ class ReactAnimatedEllipsis extends React.Component {
 
     return (
       <span
-        ref={ ref => ref && ref.animateEllipsis() }
+        ref={ ref => this.wrapper = ref }
         className={ className }
         style={ style }
         data-margin-left={ marginLeft }
