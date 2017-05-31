@@ -29,11 +29,11 @@ class ReactAnimatedEllipsis extends React.Component {
 }
 
 ReactAnimatedEllipsis.propTypes = {
-  style: React.PropTypes.object,
-  className: React.PropTypes.string,
-  fontSize: React.PropTypes.string,
-  marginLeft: React.PropTypes.string,
-  spacing: React.PropTypes.string
+  style: PropTypes.object,
+  className: PropTypes.string,
+  fontSize: PropTypes.string,
+  marginLeft: PropTypes.string,
+  spacing: PropTypes.string
 };
 
 ReactAnimatedEllipsis.defaultProps = {
