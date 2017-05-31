@@ -74,11 +74,11 @@ var ReactAnimatedEllipsis = function (_React$Component) {
 }(_react2.default.Component);
 
 ReactAnimatedEllipsis.propTypes = {
-  style: _react2.default.PropTypes.object,
-  className: _react2.default.PropTypes.string,
-  fontSize: _react2.default.PropTypes.string,
-  marginLeft: _react2.default.PropTypes.string,
-  spacing: _react2.default.PropTypes.string
+  style: _propTypes2.default.object,
+  className: _propTypes2.default.string,
+  fontSize: _propTypes2.default.string,
+  marginLeft: _propTypes2.default.string,
+  spacing: _propTypes2.default.string
 };
 
 ReactAnimatedEllipsis.defaultProps = {
