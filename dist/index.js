@@ -49,14 +49,14 @@ var ReactAnimatedEllipsis = function (_React$Component) {
       var _this2 = this;
 
       var _props = this.props,
-          style = _props.style,
+          customStyle = _props.customStyle,
           className = _props.className,
           marginLeft = _props.marginLeft,
           spacing = _props.spacing,
           fontSize = _props.fontSize;
 
       if (fontSize) {
-        style.fontSize = fontSize;
+        customStyle.fontSize = fontSize;
       }
 
       return _react2.default.createElement('span', {
@@ -64,7 +64,7 @@ var ReactAnimatedEllipsis = function (_React$Component) {
           return _this2.wrapper = _ref;
         },
         className: className,
-        style: style,
+        style: customStyle,
         'data-margin-left': marginLeft,
         'data-spacing': spacing });
     }
@@ -74,7 +74,7 @@ var ReactAnimatedEllipsis = function (_React$Component) {
 }(_react2.default.Component);
 
 ReactAnimatedEllipsis.propTypes = {
-  style: _propTypes2.default.object,
+  customStyle: _propTypes2.default.object,
   className: _propTypes2.default.string,
   fontSize: _propTypes2.default.string,
   marginLeft: _propTypes2.default.string,
@@ -82,7 +82,7 @@ ReactAnimatedEllipsis.propTypes = {
 };
 
 ReactAnimatedEllipsis.defaultProps = {
-  style: {},
+  customStyle: {},
   className: '',
   fontSize: '2rem',
   marginLeft: '0.1rem',
