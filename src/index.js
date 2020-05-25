@@ -12,16 +12,16 @@ class ReactAnimatedEllipsis extends React.Component {
     this.wrapper.stopAnimatingEllipsis();
   }
   render() {
-    const { style, className, marginLeft, spacing, fontSize } = this.props;
+    const { customStyle, className, marginLeft, spacing, fontSize } = this.props;
     if ( fontSize ) {
-      style.fontSize = fontSize;
+      customStyle.fontSize = fontSize;
     }
 
     return (
       <span
         ref={ ref => this.wrapper = ref }
         className={ className }
-        style={ style }
+        style={ customStyle }
         data-margin-left={ marginLeft }
         data-spacing={ spacing } />
     );
@@ -29,7 +29,7 @@ class ReactAnimatedEllipsis extends React.Component {
 }
 
 ReactAnimatedEllipsis.propTypes = {
-  style: PropTypes.object,
+  customStyle: PropTypes.object,
   className: PropTypes.string,
   fontSize: PropTypes.string,
   marginLeft: PropTypes.string,
@@ -37,7 +37,7 @@ ReactAnimatedEllipsis.propTypes = {
 };
 
 ReactAnimatedEllipsis.defaultProps = {
-  style: {},
+  customStyle: {},
   className: '',
   fontSize: '2rem',
   marginLeft: '0.1rem',
