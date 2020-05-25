@@ -12,10 +12,7 @@ class ReactAnimatedEllipsis extends React.Component {
     this.wrapper.stopAnimatingEllipsis();
   }
   render() {
-    const { customStyle, className, marginLeft, spacing, fontSize } = this.props;
-    // if ( fontSize ) {
-    //   customStyle.fontSize = fontSize;
-    // }
+    const { marginLeft, spacing, fontSize } = this.props;
 
     return (
       <span

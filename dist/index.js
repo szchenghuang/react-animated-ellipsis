@@ -49,14 +49,10 @@ var ReactAnimatedEllipsis = function (_React$Component) {
       var _this2 = this;
 
       var _props = this.props,
-          customStyle = _props.customStyle,
-          className = _props.className,
           marginLeft = _props.marginLeft,
           spacing = _props.spacing,
           fontSize = _props.fontSize;
-      // if ( fontSize ) {
-      //   customStyle.fontSize = fontSize;
-      // }
+
 
       return _react2.default.createElement('span', {
         ref: function ref(_ref) {
