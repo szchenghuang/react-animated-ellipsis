@@ -13,15 +13,15 @@ class ReactAnimatedEllipsis extends React.Component {
   }
   render() {
     const { customStyle, className, marginLeft, spacing, fontSize } = this.props;
-    if ( fontSize ) {
-      customStyle.fontSize = fontSize;
-    }
+    // if ( fontSize ) {
+    //   customStyle.fontSize = fontSize;
+    // }
 
     return (
       <span
         ref={ ref => this.wrapper = ref }
         className={ className }
-        style={ customStyle }
+        style={{fontSize: fontSize}}
         data-margin-left={ marginLeft }
         data-spacing={ spacing } />
     );

@@ -54,17 +54,16 @@ var ReactAnimatedEllipsis = function (_React$Component) {
           marginLeft = _props.marginLeft,
           spacing = _props.spacing,
           fontSize = _props.fontSize;
-
-      if (fontSize) {
-        customStyle.fontSize = fontSize;
-      }
+      // if ( fontSize ) {
+      //   customStyle.fontSize = fontSize;
+      // }
 
       return _react2.default.createElement('span', {
         ref: function ref(_ref) {
           return _this2.wrapper = _ref;
         },
         className: className,
-        style: customStyle,
+        style: { fontSize: fontSize },
         'data-margin-left': marginLeft,
         'data-spacing': spacing });
     }
