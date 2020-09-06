@@ -40,7 +40,7 @@ function ReactAnimatedEllipsis(props) {
   return _react2.default.createElement('span', {
     ref: wrapperRef,
     className: className,
-    style: fontSize ? style : _extends({}, style, { fontSize: fontSize }),
+    style: fontSize ? _extends({}, style, { fontSize: fontSize }) : style,
     'data-margin-left': marginLeft,
     'data-spacing': spacing
   });
