@@ -1,7 +1,7 @@
 {
   "name": "react-animated-ellipsis",
   "author": "szchenghuang <szchenghuang@gmail.com>",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A React component to animate ellipsis.",
   "main": "index.js",
   "keywords": [
