@@ -4,28 +4,26 @@ import 'animated-ellipsis';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class ReactAnimatedEllipsis extends React.Component {
-  componentDidMount() {
-    this.wrapper.animateEllipsis();
-  }
-  componentWillUnmount() {
-    this.wrapper.stopAnimatingEllipsis();
-  }
-  render() {
-    const { style, className, marginLeft, spacing, fontSize } = this.props;
-    if ( fontSize ) {
-      style.fontSize = fontSize;
-    }
+function ReactAnimatedEllipsis(props) {
+  const { style, className, marginLeft, spacing, fontSize } = props;
 
-    return (
-      <span
-        ref={ ref => this.wrapper = ref }
-        className={ className }
-        style={ style }
-        data-margin-left={ marginLeft }
-        data-spacing={ spacing } />
-    );
-  }
+  const wrapperRef = React.useRef();
+
+  React.useEffect(() => {
+    const { current } = wrapperRef;
+    current.animateEllipsis();
+    return () => current.stopAnimatingEllipsis();
+  }, []);
+
+  return (
+    <span
+      ref={ wrapperRef }
+      className={ className }
+      style={ fontSize ? { ...style, fontSize } : style }
+      data-margin-left={ marginLeft }
+      data-spacing={ spacing }
+    />
+  );
 }
 
 ReactAnimatedEllipsis.propTypes = {
